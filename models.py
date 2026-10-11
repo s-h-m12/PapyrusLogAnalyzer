@@ -1,3 +1,3 @@
 from collections import namedtuple
 
-LogEntry = namedtuple("Log", "timestamp level message missing_class")
+LogEntry = namedtuple("LogEntry", "timestamp level message missing_class")
