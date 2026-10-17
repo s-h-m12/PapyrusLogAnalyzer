@@ -23,7 +23,7 @@ class LogAnalyzer:
 
     @timeit
     def unique_scripts_in_errors(self) -> set:
-        script = re.compile("Script\s(\S+)")
+        script = re.compile(r"Script\s(\S+)")
         scripts = set()
         for x in self.entry:
             if x.level == "error":
